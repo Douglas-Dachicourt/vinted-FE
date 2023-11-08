@@ -5,5 +5,4 @@ const Offer = ()=>{
     </div>
 }
 
-
 export default Offer
