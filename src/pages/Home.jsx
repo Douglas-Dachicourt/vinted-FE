@@ -25,12 +25,13 @@ return isLoading? <p>Chargement en cours</p> : (
 <>
 
 <Header/>
+
 <Hero/>
 
 <main>
     <div className="container description">
        {data.offers.map((elem)=>{
-            return <article>       
+            return <article key={elem._id}>       
                 <div className="author">
                   <img src={elem.owner.account.avatar.secure_url} alt="" />
                   <span>{elem.owner.account.username}</span>
@@ -40,7 +41,7 @@ return isLoading? <p>Chargement en cours</p> : (
                     <p>{elem.product_price} €</p>
                     {elem.product_details.map((item)=>{
                         // console.log(item);
-                        return <div className="more-details">
+                        return <div className="more-details" key={item._id}>
                             <p>{item.MARQUE}</p>
                             <p>{item.TAILLE}</p>                           
                         </div>

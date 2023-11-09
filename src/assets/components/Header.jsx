@@ -15,7 +15,7 @@ const Header = ()=>{
         </div>
       </div>
       <div className="navigation">
-          <button>S'inscrire</button>
+          <button>S&apos;inscrire</button>
           <button>Se connecter</button>
           <button className="button-sell">Vends tes articles</button>
       </div>  
